@@ -1,0 +1,17 @@
+.sidebar{
+    background:#7EB1DC;
+    font-size:17px; 
+    height: calc(100% - 52px - 43px); /* nav left- header - footer */
+}
+.navbar-default {
+    margin-bottom:0px;
+} 
+.panel{
+    margin-bottom:0px;
+}
+h2{
+	text-align: left;
+}
+.container{
+margin:0px 180px;
+}

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Category;
 use App\Summary;
 use App\Budget;
@@ -10,16 +11,15 @@ use App\Http\Controllers\Controller;
 
 class insertCashController extends Controller
 {
-   
-
+    
     public function store(Request $request)
     {
         $insertCash = new Summary;
         $insertBudget = new Budget;
         $Budget = Budget::select('Budget')->orderBy('id', 'desc')->take(1)->get();
-        foreach ($Budget as $Bud);
+        foreach ($Budget as $Bud );
         {
-        	$Budgets = $Bud->Budget;
+            $Budgets = $Bud->Budget;
         }
 
         $insertCash->Zysk = $request->input('Zysk');
@@ -35,10 +35,10 @@ class insertCashController extends Controller
        
        
     }
-    public function category(){
-    	$category = Category::get();
-
-    	return view('insertCash', ['category' =>$category
+    public function category()
+    {
+        $category = Category::get();
+        return view('insertCash', ['category' =>$category
             ]);
     }
 
