@@ -58,3 +58,7 @@ h2{
    -webkit-justify-content : center;
    justify-content : center;
 }
+.dropright-menu {
+  top: 0;
+  left: calc(100% + 15px);
+}

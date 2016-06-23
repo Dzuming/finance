@@ -9,9 +9,9 @@
     </head>
     <body>
         @section('sidebar')
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default ">
            <div class="container-fluid">
-               <div class="navbar-header"><a class="navbar-brand" href="#"><img alt="Brand" src="..."></a></div>
+               <div class="navbar-header"><a class="navbar-brand  " href="#"><img alt="Brand" src="..."></a></div>
                <div class="navbar-user">
                <ul class="nav navbar-nav navbar-right"> 
                    <li id="fat-menu" class="dropdown">
@@ -35,9 +35,40 @@
        </nav>
        <div class="col-sm-2 col-md-1 sidebar">
            <ul class="nav nav-pills nav-stacked">
-               <li><a href="Profit">Profit <span class="sr-only">(current)</span></a></li>
-               <li><a href="Spending?Date={{date('Y-m')}}">Spending <span class="sr-only">(current)</span></a></li>
-               <li><a href="insertCash">Insert Cash</a></li> 
+           <li id="fat-menu" class="dropdown">
+                       <a  id="drop3" 
+                           href="#" 
+                           class="dropdown-toggle navbar-brand" 
+                           data-toggle="dropdown" 
+                           role="button" 
+                           aria-haspopup="false" 
+                           aria-expanded="true"> 
+                           Users 
+                       </a> 
+               <ul class="dropdown-menu dropright-menu" aria-labelledby="drop3"> 
+                   <li>
+                       <a href="/Finance/public/auth/logout">Sign out</a>
+                   </li> 
+                </ul>
+            </li> 
+            </ul>
+            <ul class="nav nav-pills nav-stacked">
+            <li id="fat-menu" class="dropdown">
+                       <a  id="drop3" 
+                           href="#" 
+                           class="dropdown-toggle navbar-brand" 
+                           data-toggle="dropdown" 
+                           role="button" 
+                           aria-haspopup="false" 
+                           aria-expanded="true"> 
+                           Products
+                       </a> 
+               <ul class="dropdown-menu dropright-menu" aria-labelledby="drop3"> 
+                   <li>
+                       <a href="/Finance/public/Admin/InsertCash">Insert Product</a>
+                   </li> 
+                </ul>
+            </li>    
            </ul>
        </div>
        @show

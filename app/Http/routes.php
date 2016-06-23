@@ -17,7 +17,6 @@ Route::get('/', function () {
 // User Routes
 Route::get('Profit', 'ProfitController@Zarobki');
 Route::get('Spending', 'SpendingController@Zarobki');
-Route::get('insertCash', 'insertCashController@category');
 Route::get('/insertCash/store', 'insertCashController@store');
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
@@ -31,7 +30,15 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 
 // Admin routes
-Route::get('Admin/Panel', [
+Route::get('Admin/Dashboard', [
     'middleware' => 'auth',
-    'uses' => 'Admin\AdminPanelController@index'
+    'uses' => 'Admin\DashboardController@index'
+]);
+Route::get('Admin/InsertCash', [
+    'middleware' => 'auth',
+    'uses' => 'Admin\InsertCashController@category'
+]);
+Route::get('Admin/InsertCash/store', [
+    'middleware' => 'auth',
+    'uses' => 'Admin\InsertCashController@store'
 ]);
