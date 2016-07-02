@@ -65,7 +65,8 @@
                        </a> 
                <ul class="dropdown-menu dropright-menu" aria-labelledby="drop3"> 
                    <li>
-                       <a href="/Finance/public/Admin/InsertCash">Insert Product</a>
+                        <a href="/Finance/public/Admin/Crud">Spending list</a>
+                       <a href="/Finance/public/Admin/Crud/create">Insert Product</a>
                    </li> 
                 </ul>
             </li>    
