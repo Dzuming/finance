@@ -12,7 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('auth/login');
 });
 // User Routes
 Route::get('Profit', 'ProfitController@Zarobki');

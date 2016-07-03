@@ -14,11 +14,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
             <li ><a href="Profit">Profit <span class="sr-only">(current)</span></a></li>
-            <li ><a href="Spending?Date={{date('Y-m')}}">Spending <span class="sr-only">(current)</span></a></li>
-            <li><a href="insertCash">Insert Cash</a></li> 
-            
-            
-             
+            <li ><a href="Spending?Date={{date('Y-m')}}">Spending <span class="sr-only">(current)</span></a></li>             
             </ul>
       </div>
       </nav>
